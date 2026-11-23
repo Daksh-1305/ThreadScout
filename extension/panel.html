@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ThreadScout</title><link rel="stylesheet" href="panel.css"></head>
+<body><header><div class="brand"><span class="mark" aria-hidden="true">↗</span> ThreadScout</div><span class="local">Local scan</span></header>
+<main><h1>Timeline desk</h1><p class="intro">Find a conversation to join or an idea to make your own.</p>
+<label for="target">Scan from the top of X Home</label><select id="target"><option value="50">50 unique posts</option><option value="100" selected>100 unique posts</option></select>
+<button id="scan" class="primary">Scan timeline</button><button id="stop" hidden>Stop and review collected posts</button><button id="separate" hidden>Move X to its own window</button><p role="status" id="status">Start on X Home. You can switch tabs or close this panel during the scan.</p>
+<details id="ai" hidden><summary>Review with AI</summary><p>Use ChatGPT by copying the brief into a chat, or run an OpenAI API review here.</p><button id="brief">Copy brief for ChatGPT</button>
+<details><summary>Review the API payload</summary><pre id="payload"></pre></details>
+<label for="key">Personal OpenAI API key</label><input type="password" id="key" autocomplete="off" spellcheck="false" placeholder="sk-…"><p class="note">Send the displayed excerpts (up to 1,200 characters each), timestamps and counts to OpenAI. API billing applies. The key stays in memory.</p><button id="send">Send to OpenAI for review</button><p id="feedback" role="status"></p></details>
+<nav aria-label="Results"><button id="replies" aria-pressed="true">Reply opportunities</button><button id="ideas" aria-pressed="false">Post ideas</button></nav>
+<section id="results" aria-label="Suggestions"></section></main><script type="module" src="panel.js"></script></body></html>
