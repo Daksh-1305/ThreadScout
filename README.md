@@ -1,6 +1,7 @@
 # ThreadScout 2.1.1
 
 ThreadScout is a Chrome side panel for finding conversations worth joining on X. Scan 50 or 100 posts from your Home timeline, review suggested replies, and open the original posts to respond in your own words. Local suggestions work without an API key.
+Although it still in development.
 
 ## Update or install on Windows
 
